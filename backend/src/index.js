@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const { errors } = require('celebrate')
 const routes = require('./routes') //./ pra referenciar a mesma pasta do arquivo routes (../ voltaria 1 pasta...)
 
 const app = express() //aplicacao criada 
@@ -7,6 +8,7 @@ const app = express() //aplicacao criada
 app.use(cors())
 app.use(express.json()) //mostrar pra minha aplicação que as requisições (get, post..) serão no formato JSON (Insomnia)
 app.use(routes)
+app.use(errors())
 
 app.listen(3333) //para minha aplicação ser aberta (ouvir) na porta 3333
 

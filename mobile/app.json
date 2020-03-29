@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Be The Hero",
-    "slug": "mobile",
+    "slug": "BeTheHero",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -24,7 +24,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lksdev.bethehero"
+    },
+    "android": {
+      "package": "com.lksdev.bethehero"
     }
   }
 }
